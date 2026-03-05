@@ -1,0 +1,26 @@
+startCommand:
+  type: stdio
+
+configSchema:
+  type: object
+  required:
+    - clawguardApiKey
+  properties:
+    clawguardApiKey:
+      type: string
+      description: "Your ClawGuard Shield API key. Get a free key at https://prompttools.co/api/v1/"
+    clawguardBaseUrl:
+      type: string
+      default: "https://prompttools.co/api/v1"
+      description: "Base URL for ClawGuard Shield API (default: https://prompttools.co/api/v1)"
+
+commandFunction:
+  |-
+  config => ({
+    command: 'clawguard-mcp',
+    args: [],
+    env: {
+      CLAWGUARD_API_KEY: config.clawguardApiKey,
+      ...(config.clawguardBaseUrl ? { CLAWGUARD_BASE_URL: config.clawguardBaseUrl } : {})
+    }
+  })
