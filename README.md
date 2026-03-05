@@ -7,6 +7,10 @@
 
 ClawGuard MCP connects [ClawGuard Shield](https://prompttools.co/api/v1/) — an AI security scanning API with 42+ detection patterns — to any tool that supports the [Model Context Protocol](https://modelcontextprotocol.io).
 
+<a href="https://glama.ai/mcp/servers/@joergmichno/clawguard-mcp">
+  <img width="380" height="200" src="https://glama.ai/mcp/servers/@joergmichno/clawguard-mcp/badge" alt="clawguard-mcp MCP server" />
+</a>
+
 ## Quick Start
 
 ### Claude Desktop
