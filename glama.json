@@ -2,5 +2,13 @@
   "$schema": "https://glama.ai/mcp/schemas/server.json",
   "maintainers": [
     "joergmichno"
-  ]
+  ],
+  "name": "clawguard-mcp",
+  "description": "Scan AI agent inputs for prompt injection, jailbreaks, and data exfiltration. 103+ patterns, 9 EU languages, EU AI Act compliance.",
+  "license": "MIT",
+  "repository": "https://github.com/joergmichno/clawguard-mcp",
+  "homepage": "https://prompttools.co/shield",
+  "categories": ["security", "compliance", "ai-safety"],
+  "runtime": "python",
+  "installCommand": "uvx clawguard-mcp"
 }
