@@ -5,7 +5,7 @@
 
 **Scan AI agent inputs for prompt injection threats — directly from Claude Desktop, Claude Code, Cursor, or any MCP client.**
 
-ClawGuard MCP connects [ClawGuard Shield](https://prompttools.co/api/v1/) — an AI security scanning API with 245 detection patterns — to any tool that supports the [Model Context Protocol](https://modelcontextprotocol.io).
+ClawGuard MCP connects [ClawGuard Shield](https://prompttools.co/api/v1/) — an AI security scanning API with 216 detection patterns — to any tool that supports the [Model Context Protocol](https://modelcontextprotocol.io).
 
 <a href="https://glama.ai/mcp/servers/@joergmichno/clawguard-mcp">
   <img width="380" height="200" src="https://glama.ai/mcp/servers/@joergmichno/clawguard-mcp/badge" alt="clawguard-mcp MCP server" />
@@ -49,7 +49,7 @@ Sign up at [prompttools.co/api/v1/](https://prompttools.co/api/v1/) — the free
 |------|-------------|
 | `scan_text` | Scan a single text for prompt injection threats |
 | `scan_batch` | Scan up to 10 texts in one call |
-| `get_patterns` | List all 245 detection patterns by category |
+| `get_patterns` | List all 216 detection patterns by category |
 | `get_usage` | Check your API usage and remaining quota |
 | `health_check` | Verify the Shield API is running |
 
@@ -79,7 +79,7 @@ Claude will call the `scan_text` tool and return results like:
 
 ## What It Detects
 
-ClawGuard Shield scans for 245 attack patterns across these categories:
+ClawGuard Shield scans for 216 attack patterns across these categories:
 
 - **Prompt Injection** — instruction overrides, system tag spoofing, agent worms
 - **Jailbreak** — DAN, roleplay, hypothetical bypasses
@@ -87,7 +87,7 @@ ClawGuard Shield scans for 245 attack patterns across these categories:
 - **Social Engineering** — authority claims, credential phishing, fake errors
 - **Encoding Attacks** — base64 payloads, unicode obfuscation
 
-**Detection rate: F1=98.0% on 262 real-world test cases. Zero false positives. 15 languages.**
+**Detection rate: F1=99.0% on 262 real-world test cases. Zero false positives. 15 languages. Full OWASP LLM + Agentic + MCP Top 10 coverage.**
 
 ## Configuration
 
