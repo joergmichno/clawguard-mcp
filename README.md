@@ -43,6 +43,10 @@ Then set your API key in the environment.
 
 Sign up at [prompttools.co/api/v1/](https://prompttools.co/api/v1/) — the free tier includes 100 scans/day.
 
+## Hosted deployment
+
+A hosted deployment is available on [Fronteir AI](https://fronteir.ai/mcp/joergmichno-clawguard-mcp).
+
 ## Tools
 
 | Tool | Description |
