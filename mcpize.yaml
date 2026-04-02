@@ -1,0 +1,18 @@
+version: 1
+name: clawguard-shield
+displayName: ClawGuard Shield — Prompt Injection Scanner
+description: >
+  Scan AI agent inputs for prompt injection threats. 225 detection patterns,
+  15 languages, OWASP LLM + Agentic Top 10 mapped, EU AI Act compliance.
+runtime: python
+pythonVersion: "3.12"
+entry: src/clawguard_mcp/server.py
+build:
+  install: pip install -e .
+env:
+  CLAWGUARD_API_URL: https://prompttools.co/api/v1
+pricing:
+  model: usage
+  perCall: 0.01
+  currency: USD
+  freeQuota: 10
